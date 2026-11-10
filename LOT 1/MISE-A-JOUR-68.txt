@@ -1,2 +1,0 @@
-Accès rapides déplacés tout en haut de l’accueil, avant les informations du concours.
-Aucun nouveau SQL. Redéployer le contenu du ZIP sur Cloudflare Pages.

@@ -1,1 +1,0 @@
-V150 - Bouton duel deplacable en jeu (souris et tactile), badge invitations et adversaire affiche. Le bot est represente visuellement sur la carte pendant les duels actifs; sa position est une animation locale, pas un joueur connecte. Aucun SQL necessaire.

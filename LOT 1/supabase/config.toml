@@ -1,7 +1,0 @@
-[functions.analyze-catch]
-# Authentification obligatoire dans index.ts : JWT staff vérifié, ou secret webhook.
-verify_jwt = false
-
-[functions.staff-notifications]
-# Contrôle du JWT utilisateur ou du secret interne du planificateur dans la fonction.
-verify_jwt = false

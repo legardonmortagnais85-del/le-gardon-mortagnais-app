@@ -1,1 +1,0 @@
-Version v152 : nouveau logo du bouton duel avec deux épées croisées dorées, petit bouton rond toujours déplaçable. Aucune modification de la logique du jeu ou des duels.

@@ -1,7 +1,0 @@
-Street Fishing Mortagne 2027 – v156
-
-Difficulté du bot ajustée automatiquement en fonction de la mise de duel (10, 25, 50 ou 100 pièces).
-Le score du bot reste exprimé en millimètres et calculé par le serveur.
-La difficulté est affichée avant de lancer le duel.
-Pas de changement pour les duels entre joueurs.
-Les duels commencés avant le déploiement conservent leur score déjà tiré.

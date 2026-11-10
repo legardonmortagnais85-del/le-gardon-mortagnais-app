@@ -1,1 +1,0 @@
-V154 — Affichage discret des duels : pastille compacte attachée au bouton mobile, nom de l’adversaire, score, chronomètre actualisé chaque seconde, invitation reçue. Aucun changement aux règles de monnaie ou au serveur.\n
