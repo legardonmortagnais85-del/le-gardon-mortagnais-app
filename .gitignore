@@ -1,0 +1,30 @@
+
+# Fichiers sensibles
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# Dépendances
+node_modules/
+
+# Fichiers temporaires
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Dossiers de compilation
+dist/
+build/
+coverage/
+
+# Configuration locale
+.vscode/
+.idea/
+
+# Fichiers de sauvegarde
+*.bak
+*.old
