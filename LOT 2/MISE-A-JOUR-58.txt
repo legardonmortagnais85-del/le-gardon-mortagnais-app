@@ -1,9 +1,0 @@
-GALERIE PHOTO — VERSION 58
-1. Exécuter 13-autoriser-galerie.sql dans Supabase > SQL Editor.
-2. Redéployer le contenu du ZIP dans Cloudflare Pages.
-3. Staff > Barème et réglages > Photos depuis la galerie > Autoriser la galerie.
-Galerie désactivée par défaut. Réglage partagé entre appareils.
-Les participants connectés voient Choisir dans ma galerie dans Prise lorsque les prises sont ouvertes.
-Le réglage se met à jour à l’ouverture de Prise et lors des actualisations ; vérification avant envoi.
-Ce réglage contrôle le choix dans l’interface ; un navigateur ne peut pas certifier l’origine caméra d’une image.
-Aucune migration appliquée automatiquement à la base. Aucun bot lancé.

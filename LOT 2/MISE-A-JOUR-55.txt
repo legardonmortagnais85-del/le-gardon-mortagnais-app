@@ -1,3 +1,0 @@
-Le bouton de l’accueil devient Inscrire mon équipe.
-Pour un visiteur non connecté, il ouvre le formulaire en mode Créer un compte.
-Un participant déjà connecté accède à son espace d’inscription.
