@@ -1,0 +1,278 @@
+/* v174 — HUD Arcade Or. Vraies commandes conservées, carte toujours jouable. */
+.hud-v160{--v174-gold:#f7d477;--v174-teal:#062e30;--v174-cream:#fff8e5;--v174-glow:#29e8f2;--v174-border:#ebd49a;--v174-side-width:clamp(43px,12.8vw,62px);--sf-head-bottom:81px;color:var(--v174-cream);}
+.hud-v160 button{-webkit-tap-highlight-color:transparent}
+.hud-v160 .top:not(.hud-panel-positioned){display:flex!important;align-items:flex-start!important;justify-content:space-between!important;width:100%!important;gap:clamp(3px,1vw,9px)!important;max-width:100%!important;min-height:72px!important;position:relative;z-index:11;}
+.hud-v160 #playerStats:not(.hud-panel-positioned){border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;min-height:65px!important;max-width:clamp(145px,47vw,385px)!important;gap:clamp(5px,1vw,10px)!important;flex:1 1 0!important;align-items:center!important;}
+.hud-v160 .hud-avatar{border:2.4px solid #ffdc75!important;box-shadow:0 0 0 2px #113f3d,0 2px 9px #001b1dba,inset 0 1px 1px #fff!important;outline:none!important;width:clamp(40px,11vw,74px)!important;height:clamp(40px,11vw,74px)!important;max-width:none!important;flex:none!important;}
+.hud-v160 .hud-personal{gap:4px!important;flex:1;min-width:0;justify-content:center}
+.hud-v160 #profileBtn{font:900 clamp(11px,3.6vw,21px)/1.12 system-ui!important;text-shadow:0 2px 2px #001b1f!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+.hud-v160 #profileBtn:after{content:' 👑';font-size:.82em;color:#ffd85a}
+.hud-v160 .account-kind{display:none!important}
+.hud-v160 .hud-profile-meta{gap:3px!important;font-size:9px!important;justify-content:flex-start!important;flex-wrap:wrap;}
+.hud-v160 .hud-level{padding:2px 5px!important;border:1.5px solid var(--v174-gold)!important;background:#164a42!important;color:#ffe69d!important;border-radius:999px!important;font:850 clamp(9px,2.7vw,12px)/1.2 system-ui!important;}
+.hud-v160 .hud-level b{font-size:1.12em!important}
+.hud-v160 .hud-xp-number{font-size:0!important;color:#e7fff5!important}
+.hud-v160 .hud-xp-number small{font:700 clamp(8px,2.25vw,12px)/1.2 system-ui!important;color:#d8f9ef!important}
+.hud-v160 .hud-xpbar{height:7px!important;border:1px solid #9fb3a8!important;background:#00191e!important;box-shadow:inset 0 1px 4px #000!important;border-radius:99px!important;}
+.hud-v160 .hud-xpbar i{background:linear-gradient(90deg,#08bfff,#79f8e2)!important;box-shadow:0 0 7px #23ddff}
+.hud-v160 .hud-profile .hud-wallet,.hud-v160 .hud-extra-stats{display:none!important}
+.hud-v160 .sf-top-resources{pointer-events:auto;display:flex;justify-content:center;align-items:flex-start;gap:clamp(3px,.8vw,8px);min-width:0;flex:none;padding-top:4px}
+.hud-v160 .sf-resource{height:clamp(29px,7.5vw,42px);display:flex;align-items:center;justify-content:center;gap:3px;min-width:0;padding:2px 5px;background:linear-gradient(170deg,#11464b,#051c29);border:1.5px solid #b7beac;border-radius:999px;box-shadow:inset 0 1px 0 #c4ffff24,0 2px 5px #00151aaf;color:white;font:900 clamp(10px,2.75vw,16px)/1 system-ui;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.hud-v160 .sf-resource span{font-size:clamp(14px,3.6vw,20px);line-height:1}
+.hud-v160 .sf-resource b{overflow:hidden;text-overflow:ellipsis;max-width:56px}
+.hud-v160 .sf-resource i{border-radius:50%;background:linear-gradient(#12d26d,#008849);font:900 clamp(13px,3.6vw,18px)/1 system-ui;width:18px;height:18px;display:grid;place-items:center;font-style:normal;box-shadow:0 1px 2px #002e1b}
+.hud-v160 #hudNavigation:not(.hud-panel-positioned){flex:none!important;max-width:none!important;gap:0!important;justify-content:flex-end!important;padding-top:1px}
+.hud-v160 #hudNavigation #hudSettingsBtn,.hud-v160 #hudNavigation #mapBtn{display:none!important}
+.hud-v160 #hudNavigation .hud-icon#menuBtn{height:clamp(38px,10vw,56px)!important;width:clamp(37px,10vw,56px)!important;min-width:0!important;padding:3px!important;display:flex!important;border:1.7px solid #dbd3aa!important;border-radius:13px!important;background:linear-gradient(160deg,#0c3940,#051e27)!important;box-shadow:0 3px 0 #03171d,0 5px 10px #00131bc4!important;}
+.hud-v160 #menuBtn svg{width:clamp(22px,6vw,30px)!important;height:clamp(22px,6vw,30px)!important}
+.hud-v160 #menuBtn span{display:none}
+.hud-v160 #menuBtn:after{content:'';position:absolute;top:0;right:0;transform:translate(23%,-18%);width:9px;height:9px;border-radius:50%;background:#ff4954;box-shadow:0 0 2px #fff6e7;border:1px solid #fee4d4}
+/* Six pictogrammes alignés comme la référence ; l'interface existante reste sous le capot. */
+.hud-v160 .sf-quick-nav:not(.hud-panel-positioned){position:absolute!important;left:max(7px,env(safe-area-inset-left))!important;right:max(7px,env(safe-area-inset-right))!important;top:calc(var(--sf-head-bottom) + 2px)!important;width:calc(100% - max(14px,env(safe-area-inset-left) + env(safe-area-inset-right)))!important;transform:none!important;}
+.hud-v160 .sf-quick-nav{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:clamp(3px,.85vw,9px)!important;z-index:10!important;}
+.hud-v160 .sf-quick-button{padding:4px 1px!important;min-height:clamp(50px,13.5vw,73px)!important;gap:3px!important;display:flex!important;flex-direction:column;justify-content:center;border:1.4px solid #bfc8b5!important;border-radius:clamp(10px,3vw,15px)!important;background:linear-gradient(155deg,#0a4142f5,#031c2bf9)!important;box-shadow:0 3px 0 #00151f,0 5px 8px #00151a8f,inset 0 1px 0 #ffffff28!important;color:#fcfcf0!important;font:850 clamp(7px,2.35vw,12px)/1.06 system-ui!important;white-space:normal!important;overflow:visible!important;text-shadow:0 1px 2px #001822!important;}
+.hud-v160 .sf-quick-emoji{font-size:clamp(19px,5.3vw,29px)!important;filter:drop-shadow(0 2px 2px #001017)!important;line-height:1!important;}
+.hud-v160 #sfLegendQuick{border-color:#ffda6d!important;background:linear-gradient(160deg,#37502c,#103625 45%,#091f27)!important;box-shadow:0 0 0 1px #e9bb50,0 0 13px #ffba2299,inset 0 0 12px #e9ce443c!important;color:#ffe991!important;}
+.hud-v160 #sfLegendQuick .sf-quick-emoji{filter:drop-shadow(0 0 7px #ffc85f)!important}
+.hud-v160 .sf-featured-fish:not(.hud-panel-positioned){position:absolute!important;top:calc(var(--sf-head-bottom) + clamp(58px,14.3vw,80px))!important;left:max(8px,env(safe-area-inset-left))!important;right:max(8px,env(safe-area-inset-right))!important;width:auto!important;max-width:none!important;min-height:clamp(48px,12.8vw,69px)!important;}
+.hud-v160 .sf-featured-fish{z-index:9!important;display:flex;align-items:center;overflow:hidden!important;gap:clamp(5px,1.4vw,13px)!important;padding:3px clamp(6px,1.8vw,16px) 3px 2px!important;border:1.6px solid #ffda74!important;border-radius:clamp(13px,3.5vw,20px)!important;background:linear-gradient(90deg,#04454cfa,#042132f9 48%,#062632fc)!important;box-shadow:0 0 0 1px #eaa94d82,0 3px 13px #00121db3,inset 0 1px 0 #e6e7a847!important;color:#fff6d6;}
+.hud-v160 .sf-featured-art{flex:none;display:block;width:clamp(65px,20vw,137px);height:clamp(45px,12vw,68px);font-size:0!important;overflow:hidden;position:relative;}
+.hud-v160 .sf-featured-art img{height:100%;width:100%;object-fit:cover;object-position:23% 43%;display:block;mask-image:linear-gradient(90deg,#000 50%,transparent 100%);}
+.hud-v160 .sf-featured-info{min-width:0;flex:1;align-self:center;gap:3px!important;}
+.hud-v160 .sf-featured-info strong{display:block!important;color:#ffe67c!important;font:900 clamp(11px,3.65vw,20px)/1.05 system-ui!important;white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis;text-shadow:0 2px 3px #051823!important}
+.hud-v160 .sf-featured-info small{font:700 clamp(9px,2.6vw,14px)/1.16 system-ui!important;color:#fff8e9!important;white-space:nowrap;}
+.hud-v160 .sf-daily-clock{flex:none;display:flex;gap:3px;align-items:center;justify-content:center;padding:4px 5px;border:1px solid #f7d082a8;border-radius:999px;color:#fff5cf;background:#062632aa;font:800 clamp(9px,2.5vw,13px)/1 system-ui;white-space:nowrap;}
+.hud-v160 .sf-daily-clock span{color:#ffd453;font-size:clamp(13px,3.3vw,18px)}
+.hud-v160 .sf-featured-next{font-size:clamp(15px,4vw,21px);font-weight:900;color:#f6d37e}
+/* Raccourcis contextuels : 4 petits onglets sur la BERGE, pas au milieu de l'eau. */
+.hud-v160 .sf-side-rail{position:absolute;left:max(7px,env(safe-area-inset-left));top:clamp(252px,38vh,520px);display:flex;flex-direction:column;gap:7px;z-index:6;pointer-events:auto;}
+.hud-v160 .sf-side-rail button{position:relative;width:var(--v174-side-width);height:clamp(53px,13.5vw,71px);padding:3px 1px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:1.7px solid #f5d68f;border-radius:clamp(12px,3.1vw,18px);background:linear-gradient(140deg,#0b4140f6,#031b28fa);color:#fff9e8;box-shadow:0 3px 0 #001921,0 6px 12px #00141a88,inset 0 1px 0 #ccfff222;text-shadow:0 1px 2px #000;touch-action:manipulation;}
+.hud-v160 .sf-side-rail button>span{font-size:clamp(20px,5.6vw,32px);line-height:1.1;filter:drop-shadow(0 1px 2px #001c23)}
+.hud-v160 .sf-side-rail button>b{font:850 clamp(9px,2.45vw,12px)/1 system-ui}
+.hud-v160 .sf-side-rail i:not([hidden]){position:absolute;right:-3px;top:-3px;width:11px;height:11px;background:#ff4558;border:1px solid #fff5dc;border-radius:50%;box-shadow:0 0 0 2px #10363c}
+.hud-v160 #hudGoals:not(.hud-panel-positioned){display:none!important}
+.hud-v160 #liveRanks:not(.hud-panel-positioned){top:calc(var(--sf-head-bottom) + clamp(120px,28.5vw,163px))!important;right:8px!important;left:auto!important;max-width:min(38vw,180px)!important;width:max-content!important;padding:4px 8px!important;opacity:.95!important;font-size:10px!important;z-index:4!important;}
+.hud-v160 #liveRanks:not(.hud-panel-positioned)[open]{width:min(180px,42vw)!important;max-width:min(180px,42vw)!important;}
+.hud-v160 #liveRanks summary{font-size:clamp(9px,2.45vw,12px)!important;min-height:20px!important;}
+.hud-v160 #liveRanks #online{font-size:10px!important}
+/* Le lieu est visible en petite pastille, même près d'une vraie zone de poissons. */
+.hud-v160 #location:not(.hud-panel-positioned){position:absolute!important;left:auto!important;right:8px!important;top:clamp(255px,30vh,480px)!important;transform:none!important;display:flex!important;padding:4px 9px 4px 22px!important;border-radius:999px!important;max-width:58vw!important;background:#052a32e9!important;box-shadow:0 2px 9px #00182093!important;border:1.5px solid #e9d49f!important;}
+.hud-v160 #location:before{content:'📍'!important;font-size:13px!important;left:4px!important;}
+.hud-v160 #location #spotName{font:850 clamp(9px,2.45vw,12px)/1.1 system-ui!important;color:#fff8e9!important}
+.hud-v160 #location .riverName{display:none!important}
+.hud-v160 #nearbyFish:not([hidden]){z-index:7!important;display:flex;flex-direction:column;position:fixed!important;top:62vh!important;right:7px!important;left:auto!important;max-width:min(51vw,210px)!important;width:max-content!important;transform:none!important;padding:5px 8px!important;border:1.7px solid #f9d790!important;border-radius:13px!important;background:linear-gradient(130deg,#053a46fa,#08242ceF)!important;box-shadow:0 4px 14px #001920ad!important;pointer-events:none!important;font-size:10px!important;}
+.hud-v160 #nearbyFish .zone-heading{color:#ffe87e!important;font:900 11px/1.2 system-ui!important}
+.hud-v160 #nearbyFish .zone-fish{font:650 10px/1.25 system-ui!important;color:white!important;}
+/* Zoom et lancer : même vocabulaire chromatique que les grands boutons. */
+.zoomtools#hudZoom:not(.hud-panel-positioned){position:absolute!important;top:clamp(320px,44vh,600px)!important;right:max(7px,env(safe-area-inset-right))!important;left:auto!important;gap:6px!important;z-index:6!important}
+.zoomtools#hudZoom button{display:flex;align-items:center;justify-content:center;width:clamp(36px,10vw,49px)!important;height:clamp(36px,10vw,49px)!important;border:1.6px solid #efd38b!important;border-radius:14px!important;background:linear-gradient(150deg,#084344f5,#031e2cf7)!important;color:#f8e3a3!important;box-shadow:0 2px 0 #00222b,0 4px 9px #00151ab8!important;font-size:clamp(23px,6vw,30px)!important;font-weight:800;}
+.hud-v160 #hudFishing:not(.hud-panel-positioned){bottom:max(13px,calc(env(safe-area-inset-bottom) + 8px))!important;z-index:10!important;}
+.hud-v160 #hudFishing .bottom .controls,.hud-v160 #hudFishing .bottom:has(#meters:not([hidden])) .controls{max-width:min(630px,100%)!important;min-height:clamp(64px,17vw,82px)!important;padding:6px 8px!important;border:2px solid #ffda78!important;border-radius:999px!important;background:linear-gradient(140deg,#043c40fb,#031d27fa 50%,#053436fa)!important;box-shadow:0 4px 0 #ae832f,0 7px 14px #00192198,inset 0 1px 5px #b7e4d626!important;}
+.hud-v160 #hudFishing .controls .modePicker{font-size:clamp(9px,2.6vw,13px)!important;color:#fffaf0!important;font-weight:850!important}
+.hud-v160 #hudFishing .controls .modePicker select{min-height:clamp(31px,8vw,39px)!important;height:auto!important;border:1.7px solid #48ee8e!important;border-radius:999px!important;background:linear-gradient(#078749,#04612c)!important;color:white!important;box-shadow:inset 0 1px 2px #b1ffc14a,0 1px 3px #001a1c!important;font:850 clamp(10px,3vw,14px)/1.1 system-ui!important;}
+.hud-v160 #hudFishing .controls .portrait-lure{color:#fff!important;font:850 clamp(10px,2.8vw,15px)/1.1 system-ui!important;text-shadow:0 1px 1px #001723!important}
+.hud-v160 #hudFishing .controls .portrait-lure:before{content:'🐟'!important;filter:drop-shadow(0 0 5px #00eaff66)}
+.hud-v160 #hudFishing .controls #action{height:clamp(50px,13vw,66px)!important;min-height:50px!important;border:2.3px solid #ffdc71!important;border-radius:999px!important;background:linear-gradient(#15ae5c,#077b3c 56%,#04602e)!important;box-shadow:0 3px 0 #bd8d32,inset 0 2px 5px #b8ffc751,0 0 6px #dbbc5a88!important;font:900 clamp(12px,3.6vw,19px)/1 system-ui!important;color:#fff!important;}
+.hud-v160 #hudFishing .controls #action:before{content:'🎣'!important;font-size:clamp(14px,4.2vw,20px)!important}
+.hud-v160 #hudFishing .hint{font-size:10px!important;background:#062c35d9!important;border:1px solid #d9c98d7e!important;}
+#floatingDuel:not([hidden]){top:68%;}
+/* L'édition manuelle du HUD existant a priorité sur nos positions par défaut. */
+body.hud-editing .sf-side-rail{display:flex!important}
+body.hud-editing .hud-v160 #hudGoals{display:flex!important}
+body.hud-editing .hud-v160 #hudNavigation #hudSettingsBtn{display:flex!important}
+.hud-v160 :is(.sf-resource,.sf-side-rail button,.sf-quick-button,.sf-featured-fish):focus-visible{outline:3px solid #fff4a6!important;outline-offset:2px!important}
+@media(max-width:360px){
+ .hud-v160 #playerStats:not(.hud-panel-positioned){max-width:46vw!important}
+ .hud-v160 .sf-resource{padding:2px 3px!important;gap:1px!important;font-size:9px!important}
+ .hud-v160 .sf-resource i{width:14px;height:14px;font-size:12px}
+ .hud-v160 .sf-top-resources{gap:2px}
+ .hud-v160 .sf-featured-art{width:58px!important}
+ .hud-v160 .sf-daily-clock{font-size:8px!important;padding-inline:2px!important}
+ .hud-v160 .sf-featured-next{display:none!important}
+ .hud-v160 .sf-quick-button{font-size:7.5px!important}
+ .hud-v160 .sf-side-rail{top:34vh!important;gap:5px!important}
+ .hud-v160 .sf-side-rail button{height:50px!important}
+ .zoomtools#hudZoom:not(.hud-panel-positioned){top:43vh!important}
+ .hud-v160 #hudFishing .bottom .controls{grid-template-columns:minmax(62px,.88fr) minmax(0,1.1fr) minmax(84px,1fr)!important}
+}
+@media(min-width:701px){
+ .hud-v160 .top:not(.hud-panel-positioned){max-width:940px!important;min-height:82px!important;gap:13px!important;}
+ .hud-v160 .sf-resource{padding-inline:10px!important;gap:6px!important}
+ .hud-v160 .sf-top-resources{gap:10px!important;}
+ .hud-v160 .sf-quick-nav:not(.hud-panel-positioned){left:24px!important;right:auto!important;width:min(800px,calc(100% - 48px))!important}
+ .hud-v160 .sf-featured-fish:not(.hud-panel-positioned){left:24px!important;right:auto!important;width:min(700px,calc(100% - 48px))!important}
+ .hud-v160 .sf-side-rail{left:24px;top:34vh}
+ .hud-v160 #hudFishing:not(.hud-panel-positioned){width:min(630px,calc(100vw - 48px))!important;max-width:630px!important;margin-inline:auto!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+ .hud-v160 #location:not(.hud-panel-positioned){right:3vw!important;top:calc(var(--sf-head-bottom) + 200px)!important}
+ .zoomtools#hudZoom:not(.hud-panel-positioned){right:3vw!important}
+}
+@media(orientation:landscape) and (max-height:550px){
+ .hud-v160 .top:not(.hud-panel-positioned){min-height:53px!important;max-width:min(440px,54vw)!important}
+ .hud-v160 #playerStats:not(.hud-panel-positioned){max-width:28vw!important}
+ .hud-v160 .hud-avatar{width:40px!important;height:40px!important}
+ .hud-v160 .sf-resource{height:30px!important}
+ .hud-v160 .sf-quick-nav:not(.hud-panel-positioned){left:auto!important;right:10px!important;top:7px!important;width:min(370px,43vw)!important;transform:none!important}
+ .hud-v160 .sf-quick-button{min-height:43px!important}
+ .hud-v160 .sf-featured-fish:not(.hud-panel-positioned){top:calc(var(--sf-head-bottom) + 3px)!important;left:10px!important;width:min(340px,43vw)!important;min-height:37px!important;right:auto!important}
+ .hud-v160 .sf-featured-art{height:32px!important;width:50px!important}
+ .hud-v160 .sf-daily-clock{font-size:9px}
+ .hud-v160 .sf-side-rail{top:37vh!important;left:10px!important;flex-direction:column;gap:3px}
+ .hud-v160 .sf-side-rail button{height:35px!important;width:51px!important;flex-direction:row;gap:1px}
+ .hud-v160 .sf-side-rail button>span{font-size:18px}
+ .hud-v160 .sf-side-rail button>b{font-size:8px}
+ .hud-v160 #liveRanks:not(.hud-panel-positioned){top:65px!important;right:10px!important}
+ .hud-v160 #location:not(.hud-panel-positioned){top:29vh!important}
+ .zoomtools#hudZoom:not(.hud-panel-positioned){top:38vh!important}
+ .zoomtools#hudZoom button{width:32px!important;height:32px!important}
+ .hud-v160 #hudFishing:not(.hud-panel-positioned){width:min(480px,46vw)!important;right:9px!important;left:auto!important;bottom:6px!important;transform:none!important}
+ .hud-v160 #hudFishing .bottom .controls{min-height:50px!important;padding:3px 5px!important}
+ .hud-v160 #hudFishing .controls #action{height:42px!important;min-height:42px!important}
+ .hud-v160 #hudFishing .hint{display:none!important}
+ .hud-v160 #nearbyFish:not([hidden]){top:40vh!important;right:65px!important}
+}
+@media(prefers-reduced-motion:reduce){.hud-v160 *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Bandeau supérieur opaque pour la lisibilité, même quand le village passe derrière. */
+.hud-v160:before{content:'';position:absolute;top:0;left:0;right:0;height:calc(var(--sf-head-bottom) + clamp(58px,14.3vw,80px));z-index:0;background:linear-gradient(160deg,#052d32f9,#021f27f7 75%,#063738e8);border-bottom:1px solid #b6b9836c;box-shadow:0 4px 13px #00171a54;pointer-events:none}
+.hud-v160 #menuBtn:after{display:none}
+.hud-v160 #menuBtn[data-has-notice="true"]:after{display:block}
+@media (orientation:landscape) and (max-height:550px){.hud-v160:before{height:61px}}
+
+/* Le bloc des quatre boutons est lui aussi déplaçable depuis Paramètres → Déplacer. */
+.hud-v160 #sfSideRail.hud-panel-positioned{position:fixed!important;top:var(--hud-y)!important;left:var(--hud-x)!important;right:auto!important;bottom:auto!important;width:var(--hud-w)!important;max-width:min(90px,24vw)!important;z-index:12!important}
+
+/* v175: navigation claire, cinq vraies destinations; colonne de gauche supprimée. */
+.hud-v160 .sf-quick-nav{grid-template-columns:repeat(5,minmax(0,1fr))!important;}
+.hud-v160 .sf-quick-button{font-size:clamp(8px,2.6vw,13px)!important;min-height:clamp(50px,13.5vw,73px)!important;}
+.hud-v160 .sf-resource{cursor:default;}
+.hud-v160 .sf-side-rail,.hud-v160 #sfSideRail,
+body.hud-editing .sf-side-rail{display:none!important;}
+.hud-v160 #hudGoals,body.hud-editing .hud-v160 #hudGoals,
+.hud-v160 #hudGoals.hud-panel-positioned{display:none!important;}
+.hud-v160 #menuBtn:after,.hud-v160 #menuBtn[data-has-notice="true"]:after{display:none!important;}
+@media(max-width:360px){
+ .hud-v160 .sf-quick-button{font-size:clamp(8px,2.5vw,10px)!important;}
+ .hud-v160 .sf-top-resources{gap:3px!important;}
+}
+/* The HUD editor adds a Zoom drag handle; it must never mask the + control outside edit mode. */
+.zoomtools#hudZoom .hud-drag-handle{display:none!important;}
+body.hud-editing .zoomtools#hudZoom .hud-drag-handle{display:block!important;}
+/* Unauthenticated placeholders must not be shown with a fictitious winner crown. */
+.hud-v160 #profileBtn:after{content:none!important;}
+@media (orientation:landscape) and (max-height:550px){
+ .hud-v160 .sf-quick-button{min-height:48px!important;font-size:9px!important;}
+ .hud-v160 .sf-quick-button > span:last-of-type{white-space:nowrap!important;overflow:hidden!important;text-overflow:clip!important;}
+ .hud-v160 .sf-quick-emoji{font-size:20px!important;}
+}
+/* Always keep main map open for touch exploration, without covering it with labels. */
+.hud-v160 .sf-featured-info small{overflow:hidden;text-overflow:ellipsis;min-width:0;max-width:100%;}
+.hud-v160 #liveRanks:not(.hud-panel-positioned){max-width:min(36vw,155px)!important;}
+
+
+/* v179 : bandeau poisson unique plus voyant. */
+.hud-v160 .sf-featured-fish[data-active="true"]{background:linear-gradient(90deg,#17544f,#0a2735 48%,#10354a)!important;}
+.hud-v160 .sf-featured-fish[data-active="true"] .sf-featured-info strong{color:#fff2a0!important;text-shadow:0 0 8px #ffce5a88,0 2px 3px #051823!important;}
+.hud-v160 .sf-featured-fish[data-active="true"] .sf-daily-clock{background:#183523dd!important;border-color:#ffe085!important;color:#fff6d0!important;}
+
+
+/* v180 : bandeau « poisson unique » qui attire l'œil, aux couleurs du poisson. */
+.hud-v160 .sf-featured-fish{--uq:#ffe866;position:relative;overflow:hidden}
+.hud-v160 .sf-featured-fish .sf-featured-art svg{display:block;filter:drop-shadow(0 0 5px var(--uq))}
+.hud-v160 .sf-featured-fish .sf-featured-info strong{letter-spacing:.2px}
+.hud-v160 .sf-featured-fish .sf-unique-zone{color:#e7f3df!important;opacity:.92}
+.hud-v160 .sf-featured-fish[data-active="false"]{border-color:#9fb98a!important;box-shadow:0 0 0 1px #0007!important}
+.hud-v160 .sf-featured-fish[data-active="false"] .sf-featured-info strong{color:#dcefc9!important}
+.hud-v160 .sf-featured-fish[data-active="true"]{border-color:var(--uq)!important;animation:sfUniqueGlow 1.6s ease-in-out infinite}
+.hud-v160 .sf-featured-fish[data-active="true"] .sf-featured-info strong{color:var(--uq)!important;text-shadow:0 0 8px var(--uq),0 2px 3px #051823!important}
+.hud-v160 .sf-featured-fish[data-active="true"]::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 35%,#ffffff55 50%,transparent 65%);transform:translateX(-120%);animation:sfUniqueShine 3.2s ease-in-out infinite}
+.hud-v160 .sf-featured-fish[data-active="true"] .sf-featured-art svg{animation:sfUniqueSwim 1.8s ease-in-out infinite}
+@keyframes sfUniqueGlow{0%,100%{box-shadow:0 0 0 1px var(--uq),0 0 10px color-mix(in srgb,var(--uq) 55%,transparent)}50%{box-shadow:0 0 0 2px var(--uq),0 0 24px var(--uq)}}
+@keyframes sfUniqueShine{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes sfUniqueSwim{0%,100%{transform:translateX(0) rotate(-2deg)}50%{transform:translateX(3px) rotate(2deg)}}
+@media (orientation:landscape) and (max-height:550px){.hud-v160 .sf-featured-fish .sf-unique-zone{display:none}}
+@media (prefers-reduced-motion:reduce){.hud-v160 .sf-featured-fish[data-active="true"],.hud-v160 .sf-featured-fish[data-active="true"]::after,.hud-v160 .sf-featured-fish[data-active="true"] .sf-featured-art svg{animation:none!important}}
+
+
+/* v180 : la ligne d'aide ne pousse plus l'interface ; elle flotte au-dessus du panneau,
+   et disparaît pendant tout le lancer (plus de « la ligne revient… » qui fait bouger l'écran). */
+.hud-v160 #hudFishing .hint{position:absolute!important;left:50%!important;bottom:calc(100% + 8px)!important;transform:translateX(-50%)!important;margin:0!important;width:max-content;max-width:min(92vw,420px);pointer-events:none;z-index:3}
+body[data-phase]:not([data-phase="walk"]) .hud-v160 #hudFishing .hint{display:none!important}
+
+/* v180 : « Entrer » et « Équiper » flottent au-dessus du panneau de pêche :
+   le panneau garde toujours la même taille, l'écran ne saute plus au lancer. */
+.hud-v160 #hudFishing .controls #enterVenue:not([hidden]),
+.hud-v160 #hudFishing .controls #equipSuggested:not([hidden]){position:absolute!important;left:50%!important;bottom:calc(100% + 8px)!important;transform:translateX(-50%)!important;width:max-content!important;min-width:200px;max-width:min(92vw,420px);margin:0!important;z-index:4;grid-column:auto!important;grid-row:auto!important}
+.hud-v160 #hudFishing:has(#enterVenue:not([hidden])) .controls #equipSuggested:not([hidden]){bottom:calc(100% + 62px)!important}
+.hud-v160 #hudFishing:has(#enterVenue:not([hidden])) .hint,.hud-v160 #hudFishing:has(#equipSuggested:not([hidden])) .hint{display:none!important}
+body:has(#enterVenue:not([hidden])) #nearbyFish{display:none!important}
+.hud-v160 #hudFishing .controls #action{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hud-v160 #hudFishing .controls #action:disabled:before{display:none!important}
+
+/* v181 (correctif PC) : le panneau de pêche reste collé en bas même quand l'aide flotte. */
+.hud-v160 #hudFishing .bottom{margin-top:auto!important}
+.hud-v160 #hudFishing .controls{position:relative}
+@media(min-width:701px){
+  .hud-v160 #hudFishing .hint{bottom:calc(25px + 132px)!important}
+}
+@media(min-width:701px){
+  body:not([data-setting-hide-nearby="true"]) .hud-v160 #hudFishing #nearbyFish:not([hidden]){position:absolute!important;left:50%!important;right:auto!important;top:auto!important;bottom:calc(25px + 132px + 44px)!important;transform:translateX(-50%)!important}
+}
+
+
+/* v182 : zone du poisson unique mise en avant dans « Zones à poissons ». */
+.zone-card.zone-unique{border:2px solid var(--uq,#ffe866)!important;background:linear-gradient(135deg,#fffbe6,#f1ecc8)!important;box-shadow:0 0 12px color-mix(in srgb,var(--uq,#ffe866) 60%,transparent)}
+.zone-card .zone-unique-line{margin:6px 0 0!important;padding:5px 8px;border-radius:8px;background:#173f38;color:var(--uq,#ffe866)!important;font:800 12px/1.3 system-ui}
+.zone-card.zone-unique[data-active="false"] .zone-unique-line{color:#d8ecd9!important;font-weight:650}
+.shop-tip{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff3c4;border:1px solid #d9b94f;color:#4a3a05;font-size:12px;line-height:1.4}
+.shop-tip[hidden]{display:none}
+
+/* v182 : optimisation téléphone portrait — zones tactiles ≥ 44 px, textes lisibles, pas de sélection parasite. */
+.hud-v160,.hud-v160 button,.hud-v160 summary{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.hud-v160 button,.hud-v160 summary,dialog button,dialog select{touch-action:manipulation}
+@media (max-width:600px) and (orientation:portrait){
+  .hud-v160 #menuBtn{min-width:44px!important;min-height:44px!important;width:44px!important;height:44px!important}
+  .hud-v160 #profileBtn{padding-block:9px!important;margin-block:-9px!important}
+  .hud-v160 #liveRanks summary{min-height:34px!important;display:flex!important;align-items:center}
+  .hud-v160 #hudFishing .controls .modePicker select{min-height:42px!important}
+  .hud-v160 #hudFishing .controls #action{min-height:56px!important}
+  dialog .close{width:44px!important;height:44px!important;font-size:22px}
+  /* textes : jamais sous 11 px */
+  .hud-v160 #xpLabel,.hud-v160 .hud-level{font-size:11px!important}
+  .hud-v160 #sfCoinsLive,.hud-v160 #sfCatchesLive,.hud-v160 #sfPointsLive{font-size:13px!important}
+  .hud-v160 #spotName,.hud-v160 #livePlace,.hud-v160 #liveRanks summary{font-size:11px!important}
+  .hud-v160 #sfDailyFishLabel,.hud-v160 #sfDailyZone,.hud-v160 #sfDailyClock{font-size:11px!important}
+  .hud-v160 #hudFishing .controls .portrait-lure,.hud-v160 #hudFishing .controls .modePicker{font-size:12px!important}
+}
+/* Petits téléphones : on libère la carte (bandeau sur 2 lignes tant que le poisson unique n'est pas actif). */
+@media (max-width:600px) and (orientation:portrait) and (max-height:700px){
+  .hud-v160 .sf-featured-fish[data-active="false"] .sf-unique-zone{display:none}
+  .hud-v160 .sf-quick-button{min-height:50px!important}
+}
+
+/* Thème commun des fenêtres : cadre or, fermeture vert pétrole. */
+dialog{border:2px solid #d9b95c!important;box-shadow:0 20px 60px #00110e99,0 0 0 3px #0b3a31!important}
+dialog h2{color:#12453c}
+dialog .close{background:#12453c!important;color:#ffe9a6!important;border:1px solid #d9b95c!important;font-weight:900}
+#duelBox .close{background:#ffe9a6!important;color:#12453c!important}
+@media (max-width:600px) and (orientation:portrait){
+  .hud-v160 #hudNavigation #menuBtn{flex:0 0 44px!important;width:44px!important;min-width:44px!important}
+  .hud-v160 #hudQuickNav .sf-quick-button>span{font-size:11px!important}
+  .hud-v160 #location #spotName{font-size:11px!important}
+  .hud-v160 #liveRanks #livePlace,.hud-v160 #liveRanks #online,.hud-v160 #liveRows li,.hud-v160 #liveRows li *{font-size:11px!important}
+  .hud-v160 #nearbyFish .zone-fish,.hud-v160 #nearbyFish .zone-heading{font-size:11px!important}
+  .hud-v160 #hudFishing .controls #enterVenue{font-size:12px!important;min-height:44px!important}
+}
+@media (max-width:600px) and (orientation:portrait){
+  .hud-v160 #hudQuickNav .sf-quick-button>span{white-space:nowrap!important;letter-spacing:-.2px}
+  .hud-v160 #liveRanks:not([open]) summary{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media (max-width:340px){
+  .hud-v160 #hudQuickNav .sf-quick-button>span{font-size:10px!important;letter-spacing:-.4px}
+  .hud-v160 #liveRanks #livePlace{display:none}
+}
+body:has(#enterVenue:not([hidden])):not([data-setting-hide-nearby="true"]) .hud-v160 #hudFishing #nearbyFish:not([hidden]){display:none!important}
+@media (max-width:600px) and (orientation:portrait) and (max-height:700px){
+  .hud-v160 #location:not(.hud-panel-positioned){left:8px!important;right:auto!important;top:calc(var(--sf-head-bottom) + 126px)!important;max-width:55vw!important}
+}
+@media (max-width:600px) and (orientation:portrait){
+  .hud-v160 #liveRanks:not(.hud-panel-positioned):not([open]){max-width:min(52vw,210px)!important}
+}

@@ -1,0 +1,15 @@
+Street Fishing Mortagne 2027 — v165 : tutoriel interactif révisé
+
+- Guide express à 7 étapes en Auto, 8 en Manuel (étape de combat en plus).
+- Le tuto explique maintenant les gestes tactiles sans joystick, les leurres, la pêche,
+  les mesures en mm, les boutiques, les quêtes/défis, les duels et le HUD déplaçable.
+- Une mini-démo de lancer et un entraînement de tension en Manuel restent facultatifs.
+- Boutons Retour, Suite, Passer accessibles à toutes les étapes ; aucune obligation
+  de se rendre à une boutique ou d'effectuer un achat.
+- Réinitialisation/restauration de la caméra lors de la relecture depuis une partie.
+- Textes actualisés, panneau du tutoriel compact en mobile et code de cache v165.
+- Tests de code et de compatibilité locale validés. Affichage sur navigateur réel non
+  validé dans ce contexte (navigation navigateur bloquée par l'environnement).
+
+Installation : déployer l'ensemble du ZIP dans Cloudflare Pages. Aucune modification
+Supabase ou D1. Les comptes et progressions ne sont pas modifiés.

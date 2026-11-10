@@ -1,0 +1,22 @@
+LE DÉFI STREET FISHING 2027 — V188
+VRAIS POISSONS UNIQUES, ANIMATION DE PRISE, DUEL, RACCOURCIS, LEURRES, MENU
+
+POISSON UNIQUE
+- Le bandeau affiche le VRAI poisson de l'espèce (perche, brochet, sandre, chevesne, silure, black-bass), recoloré avec les couleurs du poisson unique : argent lunaire, jaune néon, cuivre incandescent, vert émeraude, bleu nuit, violet royal.
+
+ANIMATION DE PRISE (poisson unique et trophée)
+- Flash, rayons lumineux tournants, le poisson entre en bondissant et flotte, bandeau doré animé (nom + taille), pastilles de récompense (+pièces, +XP pour un unique), pluie d'étoiles/pièces, vibration du téléphone. Un toucher la ferme ; elle disparaît seule (4 s / 3 s). Version réduite si « réduire les animations » est actif.
+
+DUEL
+- Bouton plus gros (60 px), halo orange qui pulse, épées qui s'agitent, étiquette « DUEL » ; « ACCEPTER ! » quand une invitation arrive (le bouton tremble) ; « EN COURS » en vert pendant un duel.
+
+RACCOURCIS DU HAUT
+- Tuiles modernes avec vraies icônes colorées : Quêtes (vert), Classement (or), Zones (bleu, repère de carte), Collection (violet), Boutique (orange). Pastille rouge animée quand une quête est prête.
+- Bouton Menu plus grand avec son libellé.
+
+LEURRES
+- Bouton « LEURRE » avec icône et nom du leurre équipé.
+- Liste : cartes avec dessin du leurre (shad, cuiller, minnow, crank), nom, poisson visé, coche sur le leurre actif ; titre explicatif.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v188.

@@ -1,0 +1,27 @@
+LE DÉFI STREET FISHING 2027 — V190
+UN LEURRE PAR POISSON, QUALITÉ DES LEURRES, BONUS ÉQUILIBRÉS JUSQU'AU NIVEAU 250
+
+UN LEURRE PAR POISSON (comme dans la réalité)
+- Perche : Shad 5 cm · Chevesne : Cuiller (tournante) · Brochet : Minnow (poisson nageur)
+- Sandre : Shad 12 cm (plombé) · Black-bass : Ver texan (nouveau, remplace le crank) · Silure : Shad 20 cm
+- Chaque leurre attire surtout son poisson (65 à 76 %), avec des prises accessoires réalistes (une cuiller peut prendre une perche, un minnow un sandre...).
+- Zones : « Branches immergées » conseille maintenant le black-bass et le ver texan.
+
+QUALITÉ DES LEURRES (boutique de pêche)
+- 7 paliers par leurre : Standard, Pro (niv. 8), Expert (25), Maître (50), Élite (90), Légendaire (140), Mythique (200).
+- Chaque palier ajoute : poissons plus grands, plus de chances d'avoir son poisson, touche plus rapide, chance de trophée.
+- Chaque leurre a un point fort : touches (shad 5), pièces (cuiller), taille (minnow), précision (shad 12), trophées (ver texan), expérience (shad 20).
+- La qualité s'affiche sur les leurres, sur le bouton du bas et dans la boutique.
+
+BONUS REVUS (talents, équipements, boutiques)
+- Plus de talents à plus haut niveau : Expérience (+10 % niv. 2, +10 % niv. 30, +15 % niv. 80, +15 % niv. 150), Pièces (+15 % niv. 4, +10 % niv. 35, +15 % niv. 90, +20 % niv. 160), touches (sonar niv. 70, détecteur niv. 45), trophées (maître des trophées niv. 100), déplacement (marathon niv. 100).
+- Canne, fil et chaussures montent à 10 niveaux (rendement réduit après le 5e) avec un niveau minimum à chaque palier.
+- Plafonds : +60 % de pièces et +50 % d'XP au maximum via les talents.
+
+ÉCONOMIE SUR 250 NIVEAUX
+- Les gains de pièces et d'expérience grandissent avec le niveau (x1 au niv. 1, x4 au niv. 100, x8,5 au niv. 250 pour les pièces), ainsi que les récompenses de quêtes, du poisson unique, et le prix du café et du guide.
+- Chaque bonus demande environ de 1 prise (début de partie) à 380 prises (niveau 160) au niveau où il se débloque (vérifié par un test).
+- Café : +25 % d'XP pendant 15 min · Guide : +20 % de pièces pendant 15 min (prix selon le niveau).
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers, dont _worker.js. Aucune migration : les qualités de leurres sont stockées avec les bonus existants.

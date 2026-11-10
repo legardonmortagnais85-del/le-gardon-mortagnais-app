@@ -1,0 +1,105 @@
+{
+  "scope": "Tests locaux de fonctions et de syntaxe ; pas un audit complet du serveur en production.",
+  "checks": [
+    {
+      "test": "test_bulk.cjs",
+      "passed": true,
+      "detail": "PASS: bulk deletion, partial failure retained, cancellation and staff restriction"
+    },
+    {
+      "test": "test_chat.cjs",
+      "passed": true,
+      "detail": "PASS: chat access, staff access, sending, failed send retains draft, user switch isolation"
+    },
+    {
+      "test": "test_coefficients.cjs",
+      "passed": true,
+      "detail": "PASS: coefficient save, decimal validation, cancellation, server failure, catch edits preserved"
+    },
+    {
+      "test": "test_install.cjs",
+      "passed": true,
+      "detail": "PASS: native installation prompt, iPhone and Android fallback instructions, installed-app state"
+    },
+    {
+      "test": "test_offline.cjs",
+      "passed": true,
+      "detail": "PASS: offline boot without auth network, saved team/session, account isolation, explicit cache removal and first-login requirement"
+    },
+    {
+      "test": "test_participants.cjs",
+      "passed": true,
+      "detail": "PASS: account + team deletion sequence, partial failures, staff gate and confirmation"
+    },
+    {
+      "test": "test_password_clear.cjs",
+      "passed": true,
+      "detail": "PASS: passwords cleared on successful login/signup, failed login remains editable"
+    },
+    {
+      "test": "test_photo_download.cjs",
+      "passed": true,
+      "detail": "PASS: staff download, filename, participant block, offline message and server denial"
+    },
+    {
+      "test": "test_purge.cjs",
+      "passed": true,
+      "detail": "PASS: permanent deletion ordering, confirmation, staff gate, recovery after storage failure"
+    },
+    {
+      "test": "test_refresh.cjs",
+      "passed": true,
+      "detail": "PASS: 15s active-panel updates, offline/background/edit protection, no duplicate chat polling"
+    },
+    {
+      "test": "test_staff.cjs",
+      "passed": true,
+      "detail": "PASS: corrections from all statuses, concurrency protection, invalid length rejected"
+    },
+    {
+      "test": "test_staff_clear.cjs",
+      "passed": true,
+      "detail": "PASS: staff data and selections cleared on account switch; stale loads invalidated"
+    },
+    {
+      "test": "test_staff_nav.cjs",
+      "passed": true,
+      "detail": "PASS: sidebar selection, only one visible panel, per-account restoration and fallback"
+    },
+    {
+      "test": "test_tab_auth.cjs",
+      "passed": true,
+      "detail": "PASS: independent accounts, isolated logout, reload persistence, independent duplicated tabs, OAuth key namespacing"
+    },
+    {
+      "test": "test_tabs.cjs",
+      "passed": true,
+      "detail": "PASS: reload restores tab, auth refresh preserves tab and photo, logout and account isolation"
+    },
+    {
+      "test": "test_team_edit.cjs",
+      "passed": true,
+      "detail": "PASS: team profile edits, trimmed fields, immutable account ownership, staff/online checks and server errors"
+    },
+    {
+      "test": "test_trash.cjs",
+      "passed": true,
+      "detail": "PASS: trash, restore, staff restriction, cancellation, server failure"
+    },
+    {
+      "test": "test_trash_bulk.cjs",
+      "passed": true,
+      "detail": "PASS: bulk permanent deletion, single confirmation, partial failure, staff gate"
+    },
+    {
+      "test": "test_bonus.py",
+      "passed": true,
+      "detail": "PASS: actual ranking aggregate (SQLite-compatible syntax): 0–5 species, duplicates, legacy bass, validation/trash, team isolation, restoration and coefficients"
+    },
+    {
+      "test": "test_capacity.py",
+      "passed": true,
+      "detail": "PASS: 40th confirmation allowed, 41st blocked, pending applications do not consume capacity, advisory lock present"
+    }
+  ]
+}

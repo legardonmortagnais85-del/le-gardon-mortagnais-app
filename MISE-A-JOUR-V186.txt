@@ -1,0 +1,10 @@
+LE DÉFI STREET FISHING 2027 — V186
+RELIEF DU TERRAIN (style Géoportail)
+
+- Estompage : le terrain est ombré (soleil au nord-ouest) pour faire ressortir la vallée de la Sèvre, les versants et le plateau.
+- Courbes de niveau : lignes brunes fines tous les 5 m, plus épaisses tous les 25 m, par-dessus bois et champs, sous les routes et les maisons.
+- Réglage : Menu > Paramètres du joueur > Affichage > « Relief du terrain » (activé par défaut).
+- IMPORTANT : le relief est SIMULÉ. Aucune donnée d'altitude réelle (IGN RGE ALTI) n'est embarquée : le terrain monte quand on s'éloigne de la rivière, avec des ondulations. Il est calculé une seule fois au chargement.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v186.

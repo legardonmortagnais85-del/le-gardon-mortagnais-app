@@ -1,0 +1,9 @@
+STREET FISHING MORTAGNE 2027 — v163 : HUD inférieur compact
+
+- Panneau de pêche beaucoup plus fin, centré, avec trois zones côte à côte : Pêche/Auto, leurre, Lancer.
+- Bouton Lancer horizontal, moins encombrant tout en conservant une grande zone tactile.
+- Modes auto et manuel, choix des leurres et phase combat conservés.
+- Jauges du combat adaptées au panneau compact.
+- Le HUD reste déplaçable via Paramètres > Déplacer mes panneaux, avec sauvegarde portrait/paysage.
+- Aucun changement du jeu serveur, des comptes ou de Supabase.
+- Vérifier sur téléphone après déploiement la largeur de l'écran et les états lancer/combat.

@@ -1,0 +1,21 @@
+LE DÉFI STREET FISHING 2027 — V184
+DUELS SIMPLIFIÉS, ZOOM SUR LES ZONES, EAU ET ZONES REDESSINÉES
+
+DUELS
+- 3 onglets : 🤖 S'entraîner · ⚔️ Défier · 🏆 Classement (au lieu d'une longue page).
+- Carte « Duel en cours » en haut (adversaire, score en mm, temps restant, bouton « Fermer et pêcher »).
+- Rang en une ligne : points, victoires/défaites, place au classement, progression.
+- Bots : « +20 🪙 si tu gagnes » ; encadré « Comment ça marche ? » en 3 phrases.
+
+POISSON UNIQUE
+- Toucher le bandeau : les fenêtres se ferment, la carte zoome et se centre sur la zone du poisson, « Me guider » est proposé.
+
+ZONES DE PÊCHE
+- Sur la carte : bande de la couleur de la zone, bords en pointillés animés (zone où lancer), ondes depuis le repère, petits poissons, pastille numérotée et étiquette (nom · poisson visé · leurre conseillé).
+- Fenêtre « Zones à poissons » : 3 étapes simples, cartes colorées, bouton « 📍 Voir sur la carte » (zoom animé sur la zone).
+
+EAU
+- Eau plus naturelle : centre plus profond, berges peu profondes plus claires, écume le long des rives, courants et reflets, courants qui glissent vers l'aval et scintillements du soleil (animation légère).
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v184.

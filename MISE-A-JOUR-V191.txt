@@ -1,0 +1,22 @@
+LE DÉFI STREET FISHING 2027 — V191
+PÊCHE CINÉMATIQUE (ESSAI), BADGES, CARTE ÉPURÉE
+
+NOUVEAU SYSTÈME DE PÊCHE : « PÊCHE CINÉMATIQUE » (activé par défaut, désactivable)
+- Réglage : Menu > Paramètres du joueur > Affichage > « Pêche cinématique (essai) ». Décoche pour revenir à la pêche classique.
+- Pendant le lancer, l'écran passe sur une vue rapprochée de l'eau : rayons de lumière, caustiques, alevins, herbiers qui ondulent, couleur de la zone de pêche.
+- Le VRAI leurre (shad, cuiller, minnow, ver texan...) nage au bout du fil, avec bulles et ondes ; la canne se plie, le moulinet tourne.
+- Le VRAI poisson s'approche en ombre, rôde en cercles de plus en plus près, puis frappe : éclair, éclaboussures, secousse et message « TOUCHE ! ».
+- Combat : le poisson (aux couleurs du poisson unique si c'en est un) tire sur le leurre, fil qui change de couleur (vert, jaune, rouge), barre « PRISE », grosse jauge de TENSION avec aiguille.
+- AUTO : tout se déroule seul, la mise en scène suffit (« Le leurre travaille tout seul… », « Le poisson se rapproche »).
+- MANUEL : anneau de ferrage autour du leurre, « FERRE ! » ; FERRAGE PARFAIT si tu ferres dans les 0,35 premières secondes (le combat démarre à 12 % de prise) ; consignes « Relâche / Mouline » et avertissement des coups de tête.
+- La logique de pêche (touche, ferrage, combat, validation serveur) n'est pas modifiée : seule la mise en scène change. Paysage et PC pris en charge.
+
+BADGES DES JOUEURS
+- Le badge de rang (ailes, couronne, étincelles) est maintenant AU-DESSUS du nom : il ne recouvre plus le pseudo, même aux grades élevés.
+
+CARTE
+- « Me guider » supprimé.
+- Courbes de niveau supprimées (l'ombrage du relief reste).
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v191.

@@ -1,0 +1,18 @@
+LE DÉFI STREET FISHING 2027 — V175
+HUD SIMPLIFIÉ / CORRECTIONS INTERFACE
+
+- Retrait complet du bouton « Équipe » : il ouvrait des duels ou un classement, ce qui trompait le joueur.
+- Retrait de toute la colonne de gauche : Carte, Quêtes, Défis, Messages (le lien Messages sortait du jeu).
+- Le menu principal conserve Carte, Quêtes, Défis, Duels, boutique et les autres fonctions existantes.
+- Accès directs conservés en haut : Quêtes, Classement, Zones, Collection, Boutique.
+- Libellés changés pour correspondre à la vraie destination, sans annoncer de tournoi ou de capture légendaire inexistants.
+- La Boutique et les Duels proposent désormais le choix du profil au lieu de ne rien faire si le joueur est déconnecté.
+- Résolution du double événement sur « Boutique » pouvant ouvrir une fenêtre d'accueil en plus.
+- Compteurs du haut maintenus en lecture seule et synchronisés aux données réelles : plus de faux bouton « + » pièces.
+- Suppression du point rouge fictif sur Menu (il n'était pas connecté aux vrais messages non lus).
+- Plus de panneaux fantômes « boutons gauche » ou « quêtes/défis » dans l'éditeur de position.
+- Nouvelle sauvegarde des positions HUD v175 pour éviter de restaurer des positions obsolètes.
+- Design vert pétrole et or conservé, optimisation portrait / petite largeur.
+
+Cette version ne modifie pas la base de données, la logique des poissons, la pêche, les boutiques,
+les duels ni les comptes. Authentification et multijoueur réels à vérifier sur l'hébergement.

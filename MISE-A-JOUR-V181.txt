@@ -1,0 +1,32 @@
+LE DÉFI STREET FISHING 2027 — V181
+DUELS, POISSON UNIQUE, FLUIDITÉ, CANNE
+
+DUELS
+- Bots = entraînement GRATUIT (aucune mise). 4 niveaux : Apprenti +20, Confirmé +45, Expert +90, Maître +160 pièces en cas de victoire (moitié en cas d'égalité, rien perdu en cas de défaite). Gain versé une seule fois par le serveur.
+- Rangs selon les millimètres cumulés dans les duels contre de vrais joueurs : Novice, Bronze, Argent, Or, Platine, Diamant, Légende (barre de progression).
+- Top 5 des duels entre joueurs (victoires puis mm). Les bots ne comptent ni pour les rangs ni pour le classement.
+- Fenêtre de duel redessinée (thème or / vert pétrole).
+
+POISSON UNIQUE
+- Le bandeau « Espèce du jour » devient « Prochain unique » / « ★ UNIQUE EN COURS ! » : poisson aux couleurs du poisson unique, nom, taille, zone, récompense, compte à rebours, lueur animée.
+- La zone indiquée pulse sur la carte (halo + étoile). La prise d'un unique a une aura colorée.
+- Règles serveur inchangées : 1 poisson par heure, 20 min pour le pêcher, 0,35 % par lancer dans la zone, +900 pièces et +650 XP.
+
+FLUIDITÉ / PLEIN ÉCRAN
+- Les tuiles de carte ne sont plus toutes générées d'un coup (au plus 2 par image) : fin du gel de 0,5 à 1,3 s à l'agrandissement de l'écran. Tuiles réduites selon le zoom.
+- Orientation du personnage et de la canne lissée (plus de rotation brusque). Caméra indépendante du nombre d'images par seconde.
+
+CANNE
+- Canne effilée, lancer en fouet, vibration de la canne à la touche et pendant le combat.
+
+INTERFACE
+- La ligne « La ligne revient automatiquement… » ne pousse plus l'écran et disparaît pendant le lancer.
+- Les boutons « Entrer » et « Équiper » flottent au-dessus du panneau : celui-ci garde toujours la même taille.
+- Corrections V180 conservées (bouton Duel/Zoom, Menu > Zones, paysage, PC).
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers, y compris _worker.js (nouveau déclencheur SQL de gain des bots, créé automatiquement).
+
+CORRECTIF PC (inclus dans cette archive)
+- Le panneau LANCER est de nouveau collé en bas sur PC (il était remonté derrière les raccourcis après le passage de l'aide en position flottante).
+- La bulle « Zone proche » est placée au-dessus du panneau sur PC.

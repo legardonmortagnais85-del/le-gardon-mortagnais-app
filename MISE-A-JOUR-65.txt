@@ -1,0 +1,7 @@
+ANALYSE IA AUTOMATIQUE — PRÉPARÉE, NON ACTIVÉE
+Nouvelles prises analysées via file Supabase. Résultats visibles dans le staff. Validation toujours manuelle.
+Installation : lire INSTALLATION-IA.md.
+Exécuter 16-aide-ia.sql puis 17-file-ia-automatique.sql, déployer analyze-catch et configurer les secrets serveur + Vault.
+Redéployer le ZIP sur Cloudflare Pages, puis activer les réglages IA dans le staff.
+Les appels OpenAI réels sont payants et n’ont pas été testés sans clé.
+Tests locaux simulés réussis. Aucun compte ni prise modifié en production.

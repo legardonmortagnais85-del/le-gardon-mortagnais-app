@@ -1,0 +1,20 @@
+LE DÉFI STREET FISHING 2027 — V180
+CORRECTIFS HUD + NETTOYAGE DES VERSIONS
+
+CORRECTIFS
+- Bouton Duel : ne recouvre plus les boutons de zoom (position par défaut calculée à côté du zoom, à gauche en paysage).
+- Menu > Zones : le menu se ferme comme pour les autres entrées.
+- Paysage : bandeau « Espèce du jour » sous l'en-tête, zoom au-dessus du bouton Lancer, lieu décalé.
+- PC : le nom du lieu n'est plus superposé au Top 5.
+- Code mort supprimé : faux « poisson du jour » écrasé par le poisson unique.
+
+NETTOYAGE
+- jeu/hud-v173.js -> jeu/hud-shortcuts.js
+- jeu/hud-v175.js -> jeu/hud-spotlight.js
+- jeu/hud-v175.css -> jeu/hud.css
+- jeu/daily-fish-v174.webp -> jeu/daily-fish.webp
+- Numéro de version unique (?v=180) pour tous les fichiers du jeu ; cache du service worker passé en v180.
+- Tests : plus de dépendance au numéro de version ; test HUD aligné sur la V175+.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers et supprime les anciens (hud-v173.js, hud-v175.js, hud-v175.css, daily-fish-v174.webp).

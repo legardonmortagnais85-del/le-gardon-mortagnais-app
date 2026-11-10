@@ -1,0 +1,21 @@
+LE DÉFI STREET FISHING 2027 — V189
+BÂTIMENTS BONUS, VÉGÉTATION, LEURRES RÉALISTES, PLAQUES DE JOUEURS
+
+BÂTIMENTS BONUS (Magasin de pêche, Café-PMU, Atelier, AAPPMA)
+- Bâtiments agrandis (x1,6) sur une place dallée avec halo pulsant à la couleur du commerce.
+- Grands repères en forme de goutte avec icône (ou logo de l'AAPPMA), qui flottent doucement, et leur nom : repérables de loin.
+
+VÉGÉTATION ET SOL
+- Sol : herbe texturée (taches de couleur, touffes) et fleurs sauvages.
+- Arbres : chênes (4 teintes), peupliers, conifères, saules près de l'eau, arbres fleuris, arbustes (certains fleuris), avec ombres et reflets de lumière.
+- Berges : roseaux avec massettes et nénuphars (certains en fleur).
+
+LEURRES
+- Illustrations réalistes : shad souple (tête plombée, corps segmenté, queue, hameçon, œil), cuiller martelée avec anneau et plumet rouge, poisson nageur (écailles, œil, deux triples), crank (livrée orange, bavette, triples).
+- Affichés dans le bouton du bas et dans la liste.
+
+PLAQUES DE JOUEURS
+- Plus petites, et d'autant plus que la foule est dense. Plus de 8 joueurs visibles ou carte dézoomée : seuls toi et le leader gardent leur nom, les autres affichent leur badge de niveau.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v189.

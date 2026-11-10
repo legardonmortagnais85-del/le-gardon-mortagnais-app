@@ -1,0 +1,19 @@
+LE DÉFI STREET FISHING 2027 — V185
+DUELS SANS MISE, CARTE ÉPURÉE
+
+DUELS
+- Plus aucune mise. Le vainqueur gagne des PIÈCES et de l'EXPÉRIENCE ; le perdant ne perd rien (seulement −15 pts de classement).
+- Contre un joueur : récompense selon le RANG du vainqueur (rang avant le duel) :
+  Novice +30 🪙 +45 XP · Bronze +45/+70 · Argent +65/+100 · Or +90/+140 · Platine +125/+190 · Diamant +170/+260 · Légende +230/+350.
+- Contre un bot : +20/+30 XP (Apprenti), +45/+65 (Confirmé), +90/+135 (Expert), +160/+240 (Maître) ; égalité = moitié.
+- Égalité contre un joueur : aucune récompense.
+- Garde-fous contre les échanges de victoires entre comptes : au moins 100 mm pêchés, 10 victoires récompensées par jour, 3 par adversaire et par jour.
+- Les anciennes invitations avec mise deviennent des duels sans mise (rien n'est prélevé).
+- L'expérience gagnée s'affiche tout de suite dans le HUD.
+
+CARTE
+- Les noms de zones ne s'affichent plus sur la carte (pastille numérotée, bande colorée et pointillés conservés).
+- Le bouton « Équiper · Shad… » est supprimé (le leurre conseillé reste dans « Zones à poissons »).
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers, dont _worker.js (nouveaux déclencheurs SQL créés automatiquement, anciens remplacés).

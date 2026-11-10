@@ -1,0 +1,11 @@
+FRÉQUENCE D’ACTUALISATION
+1. Exécuter 15-frequence-actualisation.sql dans Supabase > SQL Editor.
+2. Redéployer le contenu du ZIP sur Cloudflare Pages.
+3. Staff > Barème et réglages > Actualisation de l’application.
+Choisir de 1 à 300 secondes (5 minutes), puis Enregistrer la fréquence.
+Réglage global, récupéré par les autres appareils sous environ 15 secondes.
+Classement, prises, staff et messages utilisent le délai configuré.
+Les requêtes de fond sont évitées lors de saisies, modifications, chargements en cours et hors connexion.
+Le réglage de fréquence lui-même est vérifié séparément toutes les 15 secondes.
+Le compteur du concours continue de s’afficher chaque seconde, sans requête réseau chaque seconde pour ce compteur.
+Valeur par défaut : 15 secondes. Migration SQL à appliquer manuellement.

@@ -1,0 +1,32 @@
+LE DÉFI STREET FISHING 2027 — VERSION V174
+HUD ARCADE OR | VERSION MOBILE PORTRAIT
+
+CE QUI CHANGE
+- Nouveau bandeau joueur : portrait, pseudo, niveau, XP, monnaie, poissons capturés et points. Les valeurs sont réellement synchronisées avec les statistiques existantes (pas de monnaie fictive ajoutée).
+- Six boutons : Quotidien, Tournois, Légendaire, Collection, Équipe et Boutique ; ils renvoient vers les fonctions déjà présentes du jeu.
+- Poisson du jour avec illustration et compte à rebours jusqu'au prochain jour local (France). Il s'agit de la mise à l'honneur quotidienne existante : aucun poisson rare garanti, ni gain artificiel ajouté.
+- Quatre raccourcis sur la gauche : Carte, Quêtes, Défis et Messages. Messages renvoie à l'onglet messages de l'application du concours.
+- Accès rapides aux pièces, prises et classement depuis la barre supérieure.
+- Nouveaux contours or, fonds vert pétrole, boutons ovales pour la pêche et meilleur contraste.
+- La carte interactive, les joueurs multijoueurs, les boutiques, les duels et toutes les mécaniques de pêche restent en place.
+- Position du bloc de quatre raccourcis personnalisable via Menu > Paramètres du joueur > Déplacer mes panneaux.
+- Nouvelle clé de positions HUD v174 pour éviter que les positions enregistrées sous v173 cassent la nouvelle disposition.
+
+FICHIERS AJOUTÉS
+jeu/hud-v174.css
+jeu/hud-v174.js
+jeu/daily-fish-v174.webp
+
+FICHIERS MODIFIÉS
+jeu/index.html, jeu/hud-v173.js, jeu/hud-layout.js, jeu/session.js
+
+DÉPLOIEMENT
+Téléverse tous les fichiers de cette archive pour remplacer l'ancienne version du site sur Cloudflare Pages. Pour tester le jeu directement, ouvre /jeu/ sur ton site.
+
+TESTS
+- Contrôles statiques CSS dans Chromium : 320x700, 390x844, 430x932, 844x390 et 1365x768.
+- Affichage conjoint du HUD et de la carte réelle du jeu (moteur game.js) : OK.
+- Accès aux menus Carte, Tournois, Carnet, Zones, Quêtes et Défis : OK dans le navigateur de test.
+- Miroir des pièces, du score et des captures : OK.
+- Syntaxe JS : OK.
+- L'authentification distante, les fonctions Cloudflare/Supabase et le jeu multijoueur en situation réelle n'ont pas pu être testés depuis l'environnement de test. La mise à jour ne modifie pas ces données ni leur logique serveur.

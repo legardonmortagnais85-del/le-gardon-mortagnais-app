@@ -1,0 +1,20 @@
+LE DÉFI STREET FISHING 2027 — V187
+UNE VRAIE VILLE : ROUTES ET BÂTIMENTS REDESSINÉS
+
+ROUTES
+- Chaussée en asphalte gris avec bordure sombre, trottoirs clairs en ville, axe pointillé blanc sur les grandes routes (route principale jaune conservée).
+- Les chemins de campagne restent en terre claire.
+- Arbres d'alignement le long des rues de la ville.
+
+BÂTIMENTS
+- 6 styles de toits (ardoise bleutée, tuile rouge, gris-brun, ardoise verte), deux pans éclairés côté nord-ouest, rangs de tuiles, faîtière, cheminées avec fumée, lucarnes.
+- Façades détaillées : fenêtres à volets colorés, porte avec marche, auvent, soubassement.
+- Maisons orientées parallèlement à la rue la plus proche, faîtage horizontal pour les maisons larges.
+- Jardins avec haie, pelouse, massifs de fleurs, arbustes, et allée jusqu'à la rue.
+- Dessin du fond vers l'avant (les maisons du bas recouvrent celles du haut), ombres douces au sud-est comme le relief.
+
+PERFORMANCE
+- Génération des tuiles de carte limitée à environ 10 ms par image.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers. Cache v187.
