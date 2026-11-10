@@ -1,0 +1,10 @@
+V146 — Correction des liens légaux
+
+- Les liens Mentions légales et Confidentialité sont intégrés au pied de page du site, sans se superposer aux onglets.
+- Les liens ne restent plus visibles au-dessus du monde ouvert du jeu.
+- Dans le jeu, liens disponibles uniquement depuis « Menu du pêcheur », s’ouvrant dans un onglet séparé.
+- Le service worker ne remplace plus les pages légales par la page d’accueil en cas de problème réseau.
+- Cache du site incrémenté v146.
+
+Déployer l’intégralité du contenu sur Cloudflare Pages. Après déploiement, recharger l’application (ou fermer/réouvrir la PWA).
+Tester /mentions-legales.html et /confidentialite.html directement dans le navigateur.

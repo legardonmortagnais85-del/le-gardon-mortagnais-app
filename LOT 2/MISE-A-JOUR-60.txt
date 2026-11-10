@@ -1,0 +1,6 @@
+Cases à cocher sur les prises en attente.
+Tout sélectionner / désélectionner et compteur de sélection.
+Valider la sélection ou valider toutes les prises en attente.
+Sélection conservée lors des actualisations pour les prises encore en attente.
+Confirmation avant validation. Aucun SQL supplémentaire.
+Aucune prise réelle validée pendant le développement.

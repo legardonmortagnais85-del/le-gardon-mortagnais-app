@@ -1,0 +1,8 @@
+GESTION STAFF VISIBLE
+Menu en grille, sans défilement horizontal : toutes les rubriques visibles sur téléphone et ordinateur.
+Prises à valider ; historique ; équipes et comptes ; corbeille ; barème et réglages ; photos et classement.
+Accès au timer depuis les réglages staff.
+Tous les contrôles existants conservés : sélections, validations groupées, suppressions, restauration, galerie, coefficients, ouverture et classement public.
+Le staff dispose déjà de l’accès aux photos, sans équipe de pêcheurs.
+Si la migration photos n’a pas été appliquée, exécuter 14-photos-classement.sql. Sinon aucun SQL supplémentaire.
+Redéployer le contenu du ZIP dans Cloudflare Pages.

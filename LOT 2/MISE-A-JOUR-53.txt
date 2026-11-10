@@ -1,0 +1,8 @@
+VERSION MOBILE 53
+Boutons et champs agrandis, navigation active contrastée, textes lisibles.
+Classement en fiches sur téléphone, tableau conservé sur ordinateur.
+Barème et bonus repliables sur la page classement.
+Accueil simplifié : accès rapides redondants masqués sur téléphone.
+Onglets : retour en haut de la page sélectionnée.
+Quotas et tailles minimales restent à confirmer.
+Déploiement : déposer le contenu du ZIP dans le projet Cloudflare Pages existant.

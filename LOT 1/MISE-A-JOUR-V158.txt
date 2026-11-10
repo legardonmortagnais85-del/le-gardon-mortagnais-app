@@ -1,0 +1,10 @@
+V158 — Affichage et vérification des mises de duel
+
+- La mise est prélevée dès le début du duel, en une seule fois.
+- À la fin : victoire = 2 mises créditées, égalité = mise restituée, défaite = mise perdue (pas de second débit).
+- Les réponses serveur renvoient désormais le solde à jour après chaque action de duel.
+- Le badge flottant synchronise les pièces même si la fenêtre de duel est fermée.
+- L'historique précise que la perte a déjà été prélevée au démarrage.
+- Les tests des déclencheurs SQLite reproduisent les mises, remboursements et gains sur deux types de duel.
+
+Note : les gains des poissons capturés pendant le duel continuent de créditer des pièces. Par conséquent, le solde total peut augmenter malgré une défaite.

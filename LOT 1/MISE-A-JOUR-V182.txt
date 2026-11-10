@@ -1,0 +1,22 @@
+LE DÉFI STREET FISHING 2027 — V182
+OPTIMISATION TÉLÉPHONE PORTRAIT + FINITIONS
+
+CONTENU
+- Menu : le texte des Duels correspond aux nouvelles règles (bots gratuits, rangs, Top 5).
+- Zones à poissons : la zone du poisson unique est mise en avant (cadre à la couleur du poisson, nom, taille, récompense, en cours / prochain).
+- Boutique : si le joueur n'a aucune pièce, une astuce explique comment en gagner (pêche, bots gratuits).
+- Ferrage automatique : 15 % de ratés par défaut au lieu de 30 % (réglable par le staff) et message plus clair « Le poisson s'est décroché ! ». Les réglages déjà enregistrés par le staff ne changent pas.
+
+TÉLÉPHONE PORTRAIT
+- Zones tactiles ≥ 44 px : bouton Menu, nom du joueur, Top 5, sélecteur de mode, bouton Lancer, croix de fermeture.
+- Textes jamais sous 11 px (compteurs, libellés des raccourcis, lieu, classement).
+- Pas de sélection de texte ni de flash au toucher, pas de zoom au double toucher.
+- Très petits écrans (320 px) : libellés sans coupure, bouton Duel sous le zoom, lieu à gauche, bandeau sur 2 lignes si pas de poisson unique actif, Top 5 complet.
+- « Zone proche » masquée quand le bouton « Entrer » est affiché.
+- Vérifié sur 320x568, 360x640, 375x667, 390x844, 412x915, 430x932 : aucun débordement, aucun chevauchement.
+
+THÈME
+- Toutes les fenêtres : cadre or et bouton de fermeture vert pétrole, comme la fenêtre de duel.
+
+DÉPLOIEMENT
+Téléverse TOUS les fichiers (dont _worker.js). Cache passé en v182.

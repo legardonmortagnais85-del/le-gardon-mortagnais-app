@@ -1,0 +1,5 @@
+Accueil : date, horaires, rendez-vous et accès à mon équipe.
+Barème en tableau et bonus séparés.
+Quotas et tailles minimales à confirmer par l’organisation.
+Textes secondaires agrandis et contrastés.
+Déposer le contenu du ZIP dans le projet Cloudflare Pages existant.

@@ -1,0 +1,3 @@
+Compteur supprimé de la page d’accueil.
+Onglet Mon équipe renommé Accueil.
+Compteur de durée conservé sur Classement.

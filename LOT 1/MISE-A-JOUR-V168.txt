@@ -1,0 +1,17 @@
+VERSION V168 — FIABILISATION ANALYSE IA DES PRISES
+
+1. Fonction Supabase analyze-catch : lecture des graduations encadrant la queue, contrôle des unités, abstention si incertain.
+2. Deux lectures indépendantes lorsque la première paraît exploitable : toute divergence de plus de 10 mm supprime la proposition de taille.
+3. Pour les modèles compatibles (gpt-5.4), image envoyée en détail « original » au lieu de « high ».
+4. Nouvelle version de consigne : anciennes mesures IA ne sont plus utilisées comme nouvelles suggestions.
+5. Dans le staff, outil photo à 3 repères A/B/Queue : calcul indépendant et contrôle manuel avant report dans le champ taille.
+6. Jamais de validation automatique. Photos floues = demande de mesure manuelle.
+
+INSTALLATION OBLIGATOIRE
+A. Déployer ce ZIP sur Cloudflare Pages.
+B. Sur Supabase : redéployer Edge Functions / analyze-catch avec le fichier supabase/functions/analyze-catch/index.ts du ZIP (le ZIP seul ne modifie pas la fonction en production).
+C. Dans Edge Functions / Secrets : OPENAI_MODEL=gpt-5.4 (recommandé si accessible et avec crédits API). Les autres secrets restent inchangés.
+D. Tester une photo de toise fiable avec le staff avant le concours.
+
+COÛTS : la double lecture peut utiliser 2 requêtes IA pour une seule prise ; prévoir le budget API.
+LIMITES : aucune IA de vision seule ne garantit une mesure au mm. Le staff vérifie toujours la toise réelle.

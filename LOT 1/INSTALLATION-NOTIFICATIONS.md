@@ -1,0 +1,8 @@
+# Notifications des messages du staff
+
+1. Dans le projet Supabase Street Fishing, ouvrir **SQL Editor → New query** et exécuter le fichier **20-notifications-staff.sql**. Il s’appuie sur le chat installé par **04-chat.sql**. Le traitement vérifie les envois en attente chaque minute.
+2. Dans **Edge Functions**, créer une fonction nommée exactement **staff-notifications** et y copier **supabase/functions/staff-notifications/index.ts**. Déployer cette fonction avec la vérification JWT de la passerelle désactivée pour cette fonction uniquement. Le code vérifie lui-même le compte pour les abonnements et le secret interne pour les envois. Avec le CLI depuis le dossier décompressé et lié au projet, utiliser `supabase functions deploy staff-notifications`. Le fichier `supabase/config.toml` contient ce réglage. Les clés Web Push sont créées automatiquement côté serveur.
+3. Déployer le ZIP sur Cloudflare Pages. Depuis un téléphone connecté au compte d’une équipe inscrite, ouvrir **Messages → Activer les notifications du staff** et accepter l’autorisation. Sur iPhone (iOS 16.4 ou ultérieur), ajouter le site à l’écran d’accueil et le lancer depuis son icône avant l’activation.
+4. Pour tester, fermer l’application sur le téléphone de l’équipe et envoyer un message depuis un autre appareil connecté au compte staff. Toucher la notification doit ouvrir **Messages**. Les délais dépendent du réseau, des réglages du téléphone et du prochain passage du planificateur.
+
+L’alerte dans l’application fonctionne pour les comptes ayant accès à la discussion. Elle affiche le dernier nouveau message du staff pendant la consultation des autres pages. Sur l’écran verrouillé, la notification indique qu’un message a été publié. Le texte du message se lit dans l’application.

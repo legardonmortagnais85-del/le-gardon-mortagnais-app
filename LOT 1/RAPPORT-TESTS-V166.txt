@@ -1,0 +1,32 @@
+AUDIT LOCAL — STREET FISHING 2027 v166
+9 novembre 2026
+
+Principales corrections :
+1. Un duel annulé par la suppression du personnage adverse rembourse la mise du joueur restant.
+2. Une réinitialisation staff pendant un duel annule ce duel et rembourse l’adversaire.
+3. Les vérifications de solde avant le début d’un duel tiennent compte de la disparition d’un compte.
+4. La première synchronisation de position ne permet plus une téléportation illimitée.
+5. Le jeu reprend le pêcheur à sa position sauvegardée au lieu de revenir systématiquement au départ.
+6. Une position désynchronisée est récupérée automatiquement après consultation de l’état du serveur.
+7. La fenêtre des duels ne redessine plus deux fois les mêmes données.
+8. Changement de version des scripts et du cache pour éviter l’ancien code après mise à jour.
+
+TESTS RÉALISÉS
+- 15 fichiers de tests Node : comptes et invités ; photo caméra ; mode hors ligne ; notifications ;
+  IA (avec --experimental-strip-types) ; quêtes ; sécurité des achats et de la carte ; duels ;
+  calcul des tailles ; récompenses ; modifications du HUD ; tutoriel et navigation.
+- Essais graphiques du jeu avec un navigateur Chromium et des données de test :
+  largeurs de 320, 393 et 844 px, création d’un invité, lancement, paramètres,
+  repositionnement HUD, ouverture du menu et duels.
+- Contrôles de syntaxe JS et intégrité de l’archive.
+
+LIMITES
+- Essais automatisés sur base SQLite/D1 simulée, pas sur la base Cloudflare des vrais joueurs.
+- Supabase réel, synchronisation sur deux téléphones et notifications réelles non testés ici.
+- Impossibilité de garantir l’absence de tout bug sur tous les appareils.
+- Ne pas supprimer la base D1 ni les données Supabase pendant le déploiement.
+
+INSTALLATION
+Uploader l’archive complète sur Cloudflare Pages dans le projet existant.
+Vérifier que la liaison D1 du Worker est conservée. Aucune requête SQL Supabase requise.
+Après publication, effectuer un duel de test entre deux comptes et un duel bot avec 10 pièces.

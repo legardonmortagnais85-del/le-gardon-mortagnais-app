@@ -1,0 +1,2 @@
+Classement : colonne quota et mention des quotas retirées du barème.
+Coefficients, tailles minimales et bonus conservés.

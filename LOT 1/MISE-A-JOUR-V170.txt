@@ -1,0 +1,13 @@
+v170 — Mesure IA guidée par deux repères
+
+1. Le staff touche le zéro puis le bout de la queue.
+2. Une lecture IA des inscriptions sur la toise se lance automatiquement via Supabase.
+3. Si deux lectures sont cohérentes (écart <= 10 mm) et les graduations lisibles, une longueur en mm est préremplie.
+4. Le staff vérifie, peut corriger la longueur, coche la confirmation, puis reporte la mesure (sans valider automatiquement la prise).
+5. Si l’IA ne lit pas clairement les graduations, aucune longueur n'est inventée et le staff peut saisir les mm manuellement.
+
+INSTALLATION OBLIGATOIRE : déployer le ZIP sur Cloudflare Pages ET mettre à jour la fonction Supabase Edge Functions / analyze-catch avec supabase/functions/analyze-catch/index.ts. Aucune migration SQL nouvelle. Le modèle de vision doit être autorisé pour ce projet, OPENAI_API_KEY configuré. Les secrets restent côté serveur.
+
+Coût : une double lecture possible (jusqu'à 2 appels OpenAI). Tester sur une photo réelle avec taille connue avant utilisation en concours.
+
+Le bouton « Relancer l’estimation IA » déclenche une nouvelle lecture indépendante (dans la limite de 10 relectures, coût API supplémentaire).

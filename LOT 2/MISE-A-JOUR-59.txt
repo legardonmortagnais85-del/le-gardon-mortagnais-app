@@ -1,0 +1,9 @@
+VALIDATION GROUPÉE
+Staff > Prises à valider > Valider toutes les prises en attente.
+Le nombre est affiché et une confirmation précède la validation.
+Seules les prises en attente chargées au début sont concernées.
+Prises supprimées ou déjà traitées exclues. Les espèces et tailles sont conservées.
+Si un lot échoue, les validations déjà effectuées sont annoncées ; actualiser pour voir les restantes.
+Aucun SQL supplémentaire nécessaire pour cette fonction.
+Redéployer le contenu du ZIP sur Cloudflare Pages.
+Aucune prise du concours n’a été validée pendant le développement.
